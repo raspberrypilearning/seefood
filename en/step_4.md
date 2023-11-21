@@ -221,7 +221,7 @@ Into the second gap, which says `banana`, drag a black `recognise image [image] 
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [apple] [banana]))
+say (join (join [The model is  ] (recognise image [image] confidence :: #4b4c60)) (join [apple] [banana]))
 else
 
 end
@@ -236,7 +236,7 @@ Make sure you include a space at the end!
 ```blocks3
 when green flag clicked
 if <(recognise image [image] label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image [image] confidence :: #4b4c60)) (join [% certain that is a ] [banana]))
+say (join (join [The model is  ] (recognise image [image] confidence :: #4b4c60)) (join [% certain that is a ] [banana]))
 else
 
 end
@@ -267,7 +267,7 @@ From the aqua coloured `Images`{:class="block3operators"} menu, drop three round
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
 
 end
@@ -285,9 +285,9 @@ Place the new block into the second slot of the `if / else` block:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 end
 
 ```
@@ -300,9 +300,9 @@ Remove the final green `join` block from your second `say` block:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a  ] (recognise image (backdrop image :: #3fbc8d)  label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [banana])
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [banana])
 end
 
 ```
@@ -315,9 +315,9 @@ Replace the word `banana` with the text `% certain that is NOT a hotdog!`:
 ```blocks3
 when green flag clicked
 if <(recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)=(hotdog :: #4b4c60)> then
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% sure that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) (join [% certain that is a ] (recognise image (backdrop image :: #3fbc8d) label :: #4b4c60)))
 else
-say (join (join [I am ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
+say (join (join [The model is  ] (recognise image (backdrop image :: #3fbc8d) confidence :: #4b4c60)) [% certain that is NOT a hotdog!])
 end
 
 ```
